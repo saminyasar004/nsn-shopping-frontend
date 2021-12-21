@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+        url("../font/Poppins/Poppins-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+        url("../font/Montserrat/Montserrat-Regular.ttf") format("ttf");
+}
+
+*,
+*::before,
+*::after {
+    -webkit-user-drag: none;
+}
+
+::selection {
+    color: #fff;
+    background: #ff523b;
+}
+
+.row {
+    @apply w-row-sm m-auto;
+}
+
+.btn {
+    @apply py-2 px-6 text-white bg-primary outline-none border-2rem border-solid border-primary rounded-md capitalize cursor-pointer transition-all duration-300 hover:bg-transparent hover:text-primary;
+}
+
+.count {
+    @apply w-7 h-7 relative border-primary border-2rem rounded-b-md flex items-center justify-center transition-all duration-300 hover:bg-primary hover:text-white;
+}
+
+.count:after {
+    content: " ";
+    width: 0.638rem;
+    height: 0.638rem;
+    position: absolute;
+    top: -0.638rem;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 0;
+    border-width: 0.125rem;
+    border-color: #ff523b;
+    border-bottom: 0;
+    border-style: solid;
+    border-top-left-radius: 0.938rem;
+    border-top-right-radius: 0.938rem;
+    pointer-events: none;
+    transform: translateX(-50%);
+}
+
+.horizontal-bar {
+    @apply w-16 h-1 block bg-primary border-none rounded-sm
+    /* width: 4rem;
+    height: 0.2rem;
+    display: block;
+    background: #ff523b;
+    border: none;
+    border-radius: 0.5rem; */;
+}
+
+@tailwind utilities;

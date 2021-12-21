@@ -1,0 +1,15 @@
+{
+    "name": "nsn-tailwind",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "tailwind": "tailwindcss -i ./src/tailwind/tailwind.css -o ./src/css/styles.css -w"
+    },
+    "keywords": [],
+    "author": "Samin Yasar",
+    "license": "MIT",
+    "devDependencies": {
+        "tailwindcss": "^3.0.7"
+    }
+}
