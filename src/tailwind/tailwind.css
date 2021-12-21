@@ -19,9 +19,18 @@
     -webkit-user-drag: none;
 }
 
+html {
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
 ::selection {
     color: #fff;
     background: #ff523b;
+}
+
+body {
+    @apply cursor-default overflow-x-hidden;
 }
 
 .row {
@@ -56,13 +65,7 @@
 }
 
 .horizontal-bar {
-    @apply w-16 h-1 block bg-primary border-none rounded-sm
-    /* width: 4rem;
-    height: 0.2rem;
-    display: block;
-    background: #ff523b;
-    border: none;
-    border-radius: 0.5rem; */;
+    @apply w-16 h-1 block bg-primary border-none rounded-sm;
 }
 
 @tailwind utilities;

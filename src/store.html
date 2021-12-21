@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Store | NSN Shopping</title>
+        <!-- favicon icon -->
+        <link rel="icon" href="./img/cart.png" type="image/x-icon" />
+        <!-- Font Awesome Icon -->
+        <link rel="stylesheet" href="./icon/css/all.min.css" />
+        <!-- Linking stylesheet -->
+        <link rel="stylesheet" href="./css/styles.css" />
+        <!-- Liking javascript -->
+        <script src="./js/index.js" defer></script>
+    </head>
+    <body>
+        <!-- Header Section Start -->
+        <nav class="w-full h-auto bg-white fixed z-50 shadow-lg">
+            <div class="row">
+                <div class="w-full h-14 flex items-center justify-between">
+                    <div
+                        class="
+                            md:w-1/5
+                            h-full
+                            overflow-hidden
+                            flex
+                            items-center
+                            justify-center
+                        "
+                    >
+                        <a href="./index.html" class="inline">
+                            <img
+                                class="w-3/5"
+                                src="./img/nsn.png"
+                                alt="NSN Shopping"
+                            />
+                        </a>
+                    </div>
+                    <div class="w-4/5 h-full flex items-center justify-end">
+                        <ul
+                            class="
+                                hidden
+                                sm:flex
+                                w-full
+                                items-center
+                                justify-end
+                                gap-4
+                            "
+                        >
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                "
+                            >
+                                <a href="#">home</a>
+                            </li>
+                            <li
+                                class="
+                                    text-primary text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                "
+                            >
+                                <a href="#">store</a>
+                            </li>
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                "
+                            >
+                                <a href="#">about</a>
+                            </li>
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                "
+                            >
+                                <a href="#">contact</a>
+                            </li>
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                "
+                            >
+                                <a href="#">account</a>
+                            </li>
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                "
+                            >
+                                <a href="#"><span class="count">0</span></a>
+                            </li>
+                        </ul>
+                        <ul
+                            class="
+                                sm:hidden
+                                w-full
+                                flex
+                                items-center
+                                justify-end
+                                gap-4
+                            "
+                        >
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                "
+                            >
+                                <i
+                                    id="hamburgerIcon"
+                                    class="
+                                        fa fa-bars
+                                        text-base
+                                        cursor-pointer
+                                        text-white
+                                        bg-primary
+                                        border-primary border-2rem
+                                        py-0.5
+                                        px-2
+                                        rounded-md
+                                        transition-all
+                                        duration-300
+                                        hover:bg-transparent hover:text-primary
+                                    "
+                                ></i>
+                            </li>
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                "
+                            >
+                                <a href="#"><span class="count">0</span></a>
+                            </li>
+                        </ul>
+                        <ul
+                            id="mobileNavItemsContainer"
+                            class="
+                                sm:hidden
+                                w-0
+                                h-full
+                                flex
+                                items-center
+                                justify-center
+                                flex-col
+                                gap-4
+                                fixed
+                                top-0
+                                bottom-0
+                                right-0
+                                transition-all
+                                duration-300
+                                overflow-hidden
+                                bg-white
+                                z-50
+                            "
+                        >
+                            <li
+                                class="
+                                    text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                    absolute
+                                    top-3
+                                    right-3
+                                "
+                            >
+                                <i
+                                    id="navItemsCloseIcon"
+                                    class="
+                                        fa fa-times
+                                        text-base
+                                        cursor-pointer
+                                        text-white
+                                        bg-primary
+                                        border-primary border-2rem
+                                        py-0.5
+                                        px-2
+                                        rounded-md
+                                        transition-all
+                                        duration-300
+                                        hover:bg-transparent hover:text-primary
+                                    "
+                                ></i>
+                            </li>
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                "
+                            >
+                                <a href="#">home</a>
+                            </li>
+                            <li
+                                class="
+                                    text-primary text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                "
+                            >
+                                <a href="#">store</a>
+                            </li>
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                "
+                            >
+                                <a href="#">about</a>
+                            </li>
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                "
+                            >
+                                <a href="#">contact</a>
+                            </li>
+                            <li
+                                class="
+                                    text-secondary text-base
+                                    capitalize
+                                    font-para
+                                    hover:text-primary
+                                    transition-all
+                                    duration-300
+                                "
+                            >
+                                <a href="#">account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Header Section End -->
+
+        <!-- Products Section Start -->
+        <div class="w-full h-auto bg-white pt-24">
+            <div class="row">
+                <div class="flex items-center justify-center flex-col">
+                    <h2
+                        class="
+                            text-secondary
+                            font-heading
+                            text-xl
+                            font-bold
+                            capitalize
+                        "
+                    >
+                        our all products
+                    </h2>
+                    <div class="horizontal-bar mx-auto my-4"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="
+                        grid grid-cols-1 grid-rows-4 grid-flow-row
+                        sm:grid-cols-2 sm:grid-rows-2
+                        md:grid-cols-4 md:grid-rows-1
+                        gap-6
+                        md:gap-4
+                        py-8
+                    "
+                >
+                    <a
+                        class="
+                            flex
+                            items-center
+                            justify-center
+                            flex-col
+                            gap-2
+                            transition-all
+                            ease-in-out
+                            duration-300
+                            hover:transform hover:-translate-y-1
+                        "
+                        href="#"
+                    >
+                        <div class="w-full h-auto">
+                            <img
+                                class="
+                                    w-60
+                                    h-60
+                                    md:w-48 md:h-48
+                                    object-cover object-center
+                                    m-auto
+                                "
+                                src="./img/Adidas White Sneaker.jpg"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <h4
+                                class="
+                                    text-secondary
+                                    font-heading
+                                    capitalize
+                                    text-sm
+                                    font-semibold
+                                "
+                            >
+                                men black sneaker
+                            </h4>
+                        </div>
+                        <div
+                            class="
+                                flex
+                                items-center
+                                justify-center
+                                gap-1
+                                text-sm
+                            "
+                        >
+                            <i class="fa fa-star text-primary"></i>
+                            <i class="fa fa-star text-primary"></i>
+                            <i class="fa fa-star text-primary"></i>
+                            <i class="fa fa-star text-primary"></i>
+                            <i class="fa fa-star text-primary"></i>
+                        </div>
+                        <div class="text-center">
+                            <h5
+                                class="
+                                    text-secondary
+                                    font-heading
+                                    capitalize
+                                    text-base
+                                    font-semibold
+                                "
+                            >
+                                $165
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Products Section End -->
+
+        <!-- Footer Section Start -->
+        <div class="w-full h-auto bg-footer py-6">
+            <div class="row">
+                <div
+                    class="
+                        flex
+                        items-center
+                        justify-between
+                        sm:flex-row
+                        flex-col
+                        gap-3
+                        sm:gap-0
+                    "
+                >
+                    <div
+                        class="
+                            md:w-1/5
+                            w-3/5
+                            h-full
+                            overflow-hidden
+                            flex
+                            items-center
+                            justify-center
+                        "
+                    >
+                        <a href="./index.html" class="inline">
+                            <img
+                                class="w-3/5 m-auto"
+                                src="./img/nsn-white.png"
+                                alt="NSN Shopping"
+                            />
+                        </a>
+                    </div>
+                    <div class="sm:text-left text-center">
+                        <h6
+                            class="
+                                font-para
+                                text-white text-xs
+                                md:text-sm
+                                capitalize
+                                py-1
+                            "
+                        >
+                            copyright © 2021 || all rights researved.
+                        </h6>
+                        <h6
+                            class="
+                                font-para
+                                text-white text-xs
+                                md:text-sm
+                                capitalize
+                                py-1
+                            "
+                        >
+                            design & developed by
+                            <a
+                                class="
+                                    text-primary
+                                    transition-all
+                                    duration-300
+                                    hover:underline
+                                "
+                                href="https://saminyasar.netlify.app/"
+                                target="_blank"
+                                >samin yasar</a
+                            >
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section End -->
+    </body>
+</html>
