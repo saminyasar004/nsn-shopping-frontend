@@ -16,6 +16,7 @@ module.exports = {
                 "input-border-focus": "#66afe9",
                 "tr-odd-bg": "#e7e7e7",
                 "tr-even-bg": "transparent",
+                "checkout-border": "rgb(0, 0, 0, 0.1)",
             },
             backgroundImage: {
                 offer: "-webkit-gradient(linear, left top, left bottom, from(#e2e2e29e)), url('../img/offer-banner-01.jpg')",
