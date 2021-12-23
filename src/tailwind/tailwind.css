@@ -68,4 +68,24 @@ body {
     @apply w-16 h-1 block bg-primary border-none rounded-sm;
 }
 
+.form-group {
+    @apply w-full h-auto flex items-start justify-start flex-col gap-2;
+}
+
+tbody tr:nth-child(odd) {
+    @apply bg-tr-odd-bg text-black font-medium;
+}
+
+tbody tr:nth-child(even) {
+    @apply bg-tr-even-bg text-black font-medium;
+}
+
+tbody td {
+    @apply py-2 px-0 text-sm border-1rem border-white text-center capitalize;
+}
+
+.cart-table-product-image {
+    @apply w-12 h-12 object-cover object-center m-auto;
+}
+
 @tailwind utilities;

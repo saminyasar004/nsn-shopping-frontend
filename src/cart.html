@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Store | NSN Shopping</title>
+        <title>Cart | NSN Shopping</title>
         <!-- favicon icon -->
         <link rel="icon" href="./img/cart.png" type="image/x-icon" />
         <!-- Font Awesome Icon -->
@@ -62,7 +62,7 @@
                             </li>
                             <li
                                 class="
-                                    text-primary text-base
+                                    text-secondary text-base
                                     capitalize
                                     font-para
                                     hover:text-primary
@@ -110,13 +110,13 @@
                             </li>
                             <li
                                 class="
-                                    text-secondary text-base
+                                    text-white text-base
                                     capitalize
                                     font-para
                                 "
                             >
                                 <a href="./cart.html"
-                                    ><span class="count">0</span></a
+                                    ><span class="count bg-primary">0</span></a
                                 >
                             </li>
                         </ul>
@@ -157,13 +157,13 @@
                             </li>
                             <li
                                 class="
-                                    text-secondary text-base
+                                    text-white text-base
                                     capitalize
                                     font-para
                                 "
                             >
                                 <a href="./cart.html"
-                                    ><span class="count">0</span></a
+                                    ><span class="count bg-primary">0</span></a
                                 >
                             </li>
                         </ul>
@@ -234,7 +234,7 @@
                             </li>
                             <li
                                 class="
-                                    text-primary text-base
+                                    text-secondary text-base
                                     capitalize
                                     font-para
                                     hover:text-primary
@@ -287,107 +287,181 @@
         </nav>
         <!-- Header Section End -->
 
-        <!-- Products Section Start -->
-        <div class="w-full h-auto bg-white pt-24">
+        <!-- Cart Section Start -->
+        <div class="w-full h-auto bg-white py-32">
             <div class="row">
-                <div class="flex items-center justify-center flex-col">
-                    <h2
+                <div class="overflow-x-scroll py-6">
+                    <table
                         class="
-                            text-secondary
-                            font-heading
-                            text-xl
-                            font-bold
-                            capitalize
+                            w-full
+                            min-w-max
+                            h-auto
+                            border-1rem border-white border-collapse
                         "
                     >
-                        our all products
-                    </h2>
-                    <div class="horizontal-bar mx-auto my-4"></div>
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th
+                                    class="
+                                        border-1rem border-white
+                                        text-center
+                                        capitalize
+                                        font-heading font-medium
+                                        p-2
+                                    "
+                                >
+                                    image
+                                </th>
+                                <th
+                                    class="
+                                        border-1rem border-white
+                                        text-center
+                                        capitalize
+                                        font-heading font-medium
+                                        p-2
+                                    "
+                                >
+                                    name
+                                </th>
+                                <th
+                                    class="
+                                        border-1rem border-white
+                                        text-center
+                                        capitalize
+                                        font-heading font-medium
+                                        p-2
+                                    "
+                                >
+                                    quantity
+                                </th>
+                                <th
+                                    class="
+                                        border-1rem border-white
+                                        text-center
+                                        capitalize
+                                        font-heading font-medium
+                                        p-2
+                                    "
+                                >
+                                    date
+                                </th>
+                                <th
+                                    class="
+                                        border-1rem border-white
+                                        text-center
+                                        capitalize
+                                        font-heading font-medium
+                                        p-2
+                                    "
+                                >
+                                    price
+                                </th>
+                                <th
+                                    class="
+                                        border-1rem border-white
+                                        text-center
+                                        capitalize
+                                        font-heading font-medium
+                                        p-2
+                                    "
+                                >
+                                    delete
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img
+                                        src="./img/Adidas White Sneaker.jpg"
+                                        class="cart-table-product-image"
+                                    />
+                                </td>
+                                <td>adidas white sneaker</td>
+                                <td>1</td>
+                                <td>23 dec 2021</td>
+                                <td>$90.00</td>
+                                <td>
+                                    <a
+                                        onclick="return confirm('Are you sure to delete this product from your cart?')"
+                                        href="#"
+                                    >
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img
+                                        src="./img/Black Sneaker.jpg"
+                                        class="cart-table-product-image"
+                                    />
+                                </td>
+                                <td>black sneaker</td>
+                                <td>1</td>
+                                <td>23 dec 2021</td>
+                                <td>$120.00</td>
+                                <td>
+                                    <a
+                                        onclick="return confirm('Are you sure to delete this product from your cart?')"
+                                        href="#"
+                                    >
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+
             <div class="row">
                 <div
                     class="
-                        grid grid-cols-1 grid-rows-4 grid-flow-row
-                        sm:grid-cols-2 sm:grid-rows-2
-                        md:grid-cols-4 md:grid-rows-1
-                        gap-6
-                        md:gap-4
-                        py-8
+                        flex
+                        items-center
+                        justify-center
+                        flex-col
+                        md:items-end md:justify-end
+                        gap-8
+                        py-6
                     "
                 >
-                    <a
+                    <table
                         class="
-                            flex
-                            items-center
-                            justify-center
-                            flex-col
-                            gap-2
-                            transition-all
-                            ease-in-out
-                            duration-300
-                            hover:transform hover:-translate-y-1
+                            w-full
+                            md:w-1/2
+                            h-auto
+                            border-t-2 border-primary border-collapse
                         "
-                        href="#"
                     >
-                        <div class="w-full h-auto">
-                            <img
-                                class="
-                                    w-60
-                                    h-60
-                                    md:w-48 md:h-48
-                                    object-cover object-center
-                                    m-auto
-                                "
-                                src="./img/Adidas White Sneaker.jpg"
-                            />
-                        </div>
-                        <div class="text-center">
-                            <h4
-                                class="
-                                    text-secondary
-                                    font-heading
-                                    capitalize
-                                    text-sm
-                                    font-semibold
-                                "
-                            >
-                                men black sneaker
-                            </h4>
-                        </div>
-                        <div
-                            class="
-                                flex
-                                items-center
-                                justify-center
-                                gap-1
-                                text-sm
-                            "
+                        <tbody>
+                            <tr>
+                                <td>subtotal</td>
+                                <td>$175.00</td>
+                            </tr>
+                            <tr>
+                                <td>vat</td>
+                                <td>$20.00</td>
+                            </tr>
+                            <tr>
+                                <td>total</td>
+                                <td>$195.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="w-full md:w-1/2 h-auto">
+                        <a
+                            class="btn inline-block w-full text-center"
+                            href="./checkout.html"
+                            >proceed to checkout</a
                         >
-                            <i class="fa fa-star text-primary"></i>
-                            <i class="fa fa-star text-primary"></i>
-                            <i class="fa fa-star text-primary"></i>
-                            <i class="fa fa-star text-primary"></i>
-                            <i class="fa fa-star text-primary"></i>
-                        </div>
-                        <div class="text-center">
-                            <h5
-                                class="
-                                    text-secondary
-                                    font-heading
-                                    capitalize
-                                    text-base
-                                    font-semibold
-                                "
-                            >
-                                $165
-                            </h5>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Products Section End -->
+        <!-- Cart Section End -->
 
         <!-- Footer Section Start -->
         <div class="w-full h-auto bg-footer py-6">
