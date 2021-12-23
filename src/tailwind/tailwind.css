@@ -34,7 +34,7 @@ body {
 }
 
 .row {
-    @apply w-row-sm m-auto;
+    @apply w-row-sm max-w-5xl m-auto;
 }
 
 .btn {
