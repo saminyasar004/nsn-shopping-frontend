@@ -4,7 +4,8 @@
     "description": "",
     "main": "app.js",
     "scripts": {
-        "tailwind": "tailwindcss -i ./src/tailwind/tailwind.css -o ./src/css/styles.css -w"
+        "build-tailwind": "tailwindcss -i ./src/tailwind/tailwind.css -o ./src/css/styles.css -w",
+        "minify-tailwind": "npx tailwindcss -o ./src/css/styles.css --minify"
     },
     "keywords": [],
     "author": "Samin Yasar",
