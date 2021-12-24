@@ -1,5 +1,9 @@
 module.exports = {
-    content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
+    content: [
+        "./src/**/*.html",
+        "./public/**/*.html",
+        "./src/**/*.{js,jsx,ts,tsx,vue}",
+    ],
     darkMode: "class", // or 'media' or 'class'
     theme: {
         extend: {

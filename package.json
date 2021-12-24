@@ -2,10 +2,10 @@
     "name": "nsn-tailwind",
     "version": "1.0.0",
     "description": "",
-    "main": "app.js",
+    "main": "./src/js/index.js",
     "scripts": {
         "build-tailwind": "tailwindcss -i ./src/tailwind/tailwind.css -o ./src/css/styles.css -w",
-        "minify-tailwind": "npx tailwindcss -o ./src/css/styles.css --minify"
+        "minify-tailwind": "npx tailwindcss -i ./src/tailwind/tailwind.css -o ./src/css/styles.css --minify"
     },
     "keywords": [],
     "author": "Samin Yasar",
