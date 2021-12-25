@@ -4,15 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Account | NSN Shopping</title>
+        <title>Store | NSN Shopping</title>
         <!-- favicon icon -->
-        <link rel="icon" href="./img/cart.png" type="image/x-icon" />
+        <link rel="icon" href="../src/img/cart.png" type="image/x-icon" />
         <!-- Font Awesome Icon -->
-        <link rel="stylesheet" href="./icon/css/all.min.css" />
+        <link rel="stylesheet" href="../src/icon/css/all.min.css" />
         <!-- Linking stylesheet -->
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="../src/css/styles.css" />
         <!-- Liking javascript -->
-        <script src="./js/index.js" defer></script>
+        <script src="../src/js/index.js" defer></script>
     </head>
     <body>
         <!-- Header Section Start -->
@@ -32,7 +32,7 @@
                         <a href="./index.html" class="inline">
                             <img
                                 class="w-3/5"
-                                src="./img/nsn.png"
+                                src="../src/img/nsn.png"
                                 alt="NSN Shopping"
                             />
                         </a>
@@ -62,7 +62,7 @@
                             </li>
                             <li
                                 class="
-                                    text-secondary text-base
+                                    text-primary text-base
                                     capitalize
                                     font-para
                                     hover:text-primary
@@ -86,7 +86,7 @@
                             </li>
                             <li
                                 class="
-                                    text-primary text-base
+                                    text-secondary text-base
                                     capitalize
                                     font-para
                                     hover:text-primary
@@ -234,7 +234,7 @@
                             </li>
                             <li
                                 class="
-                                    text-secondary text-base
+                                    text-primary text-base
                                     capitalize
                                     font-para
                                     hover:text-primary
@@ -258,7 +258,7 @@
                             </li>
                             <li
                                 class="
-                                    text-primary text-base
+                                    text-secondary text-base
                                     capitalize
                                     font-para
                                     hover:text-primary
@@ -287,348 +287,107 @@
         </nav>
         <!-- Header Section End -->
 
-        <!-- Account Section Start -->
-        <div class="w-full h-auto bg-white py-20 md:py-40">
+        <!-- Products Section Start -->
+        <div class="w-full h-auto bg-white pt-24">
             <div class="row">
-                <div class="text-center">
+                <div class="flex items-center justify-center flex-col">
                     <h2
                         class="
+                            text-secondary
                             font-heading
-                            text-secondary text-xl
+                            text-xl
                             font-bold
                             capitalize
                         "
                     >
-                        my account
+                        our all products
                     </h2>
-                    <div class="horizontal-bar m-auto my-4"></div>
+                    <div class="horizontal-bar mx-auto my-4"></div>
                 </div>
             </div>
             <div class="row">
                 <div
                     class="
-                        grid
-                        md:grid-cols-2 md:grid-rows-1
-                        grid-cols-1 grid-rows-2
-                        gap-10
-                        md:gap-14
-                        lg:gap-60
-                        py-10
+                        grid grid-cols-1 grid-rows-4 grid-flow-row
+                        sm:grid-cols-2 sm:grid-rows-2
+                        md:grid-cols-4 md:grid-rows-1
+                        gap-6
+                        md:gap-4
+                        py-8
                     "
                 >
-                    <div
+                    <a
                         class="
                             flex
                             items-center
                             justify-center
                             flex-col
-                            gap-8
-                            px-7
-                            py-6
-                            md:py-11
-                            rounded-md
-                            border-1rem border-form-border
+                            gap-2
+                            transition-all
+                            ease-in-out
+                            duration-300
+                            hover:transform hover:-translate-y-1
                         "
+                        href="#"
                     >
-                        <div class="text-center">
-                            <h3
+                        <div class="w-full h-auto">
+                            <img
                                 class="
+                                    w-60
+                                    h-60
+                                    md:w-48 md:h-48
+                                    object-cover object-center
+                                    m-auto
+                                "
+                                src="../src/img/Adidas White Sneaker.jpg"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <h4
+                                class="
+                                    text-secondary
                                     font-heading
-                                    text-secondary text-xl
-                                    font-bold
                                     capitalize
+                                    text-sm
+                                    font-semibold
                                 "
                             >
-                                login
-                            </h3>
+                                men black sneaker
+                            </h4>
                         </div>
-                        <form
-                            action="#"
+                        <div
                             class="
-                                w-full
                                 flex
                                 items-center
                                 justify-center
-                                gap-4
-                                flex-col
+                                gap-1
+                                text-sm
                             "
                         >
-                            <div class="form-group">
-                                <label
-                                    class="
-                                        text-secondary
-                                        capitalize
-                                        font-para font-normal
-                                        text-base
-                                    "
-                                    for="usernameLogin"
-                                    >username
-                                    <span
-                                        class="
-                                            text-primary
-                                            font-extrabold
-                                            text-sm
-                                            font-para
-                                        "
-                                        >*</span
-                                    ></label
-                                >
-                                <input
-                                    type="text"
-                                    name="username"
-                                    id="usernameLogin"
-                                    class="
-                                        text-secondary
-                                        border-1-2rem border-input-border
-                                        focus:border-input-border-focus
-                                        rounded-md
-                                        w-full
-                                        h-9
-                                        px-4
-                                        py-1
-                                        font-para
-                                        text-sm
-                                        outline-none
-                                    "
-                                />
-                            </div>
-
-                            <div class="form-group">
-                                <label
-                                    class="
-                                        text-secondary
-                                        capitalize
-                                        font-para font-normal
-                                        text-base
-                                    "
-                                    for="passwordLogin"
-                                    >password
-                                    <span
-                                        class="
-                                            text-primary
-                                            font-extrabold
-                                            text-sm
-                                            font-para
-                                        "
-                                        >*</span
-                                    ></label
-                                >
-                                <input
-                                    type="password"
-                                    name="password"
-                                    id="passwordLogin"
-                                    class="
-                                        text-secondary
-                                        border-1-2rem border-input-border
-                                        focus:border-input-border-focus
-                                        rounded-md
-                                        w-full
-                                        h-9
-                                        px-4
-                                        py-1
-                                        font-para
-                                        text-sm
-                                        outline-none
-                                    "
-                                />
-                            </div>
-
-                            <div class="form-group items-center md:items-start">
-                                <a
-                                    class="
-                                        text-primary
-                                        font-para
-                                        text-sm
-                                        capitalize
-                                        transition-all
-                                        duration-300
-                                        hover:underline
-                                    "
-                                    href="./resetpassword.html"
-                                    >lost your password?</a
-                                >
-                            </div>
-
-                            <div class="form-group items-center md:items-start">
-                                <input
-                                    class="btn text-sm capitalize"
-                                    type="submit"
-                                    value="login"
-                                />
-                            </div>
-                        </form>
-                    </div>
-
-                    <div
-                        class="
-                            flex
-                            items-center
-                            justify-center
-                            flex-col
-                            gap-8
-                            px-7
-                            py-6
-                            md:py-11
-                            rounded-md
-                            border-1rem border-form-border
-                        "
-                    >
+                            <i class="fa fa-star text-primary"></i>
+                            <i class="fa fa-star text-primary"></i>
+                            <i class="fa fa-star text-primary"></i>
+                            <i class="fa fa-star text-primary"></i>
+                            <i class="fa fa-star text-primary"></i>
+                        </div>
                         <div class="text-center">
-                            <h3
+                            <h5
                                 class="
+                                    text-secondary
                                     font-heading
-                                    text-secondary text-xl
-                                    font-bold
                                     capitalize
+                                    text-base
+                                    font-semibold
                                 "
                             >
-                                register
-                            </h3>
+                                $165
+                            </h5>
                         </div>
-                        <form
-                            action="#"
-                            class="
-                                w-full
-                                flex
-                                items-center
-                                justify-center
-                                gap-4
-                                flex-col
-                            "
-                        >
-                            <div class="form-group">
-                                <label
-                                    class="
-                                        text-secondary
-                                        capitalize
-                                        font-para font-normal
-                                        text-base
-                                    "
-                                    for="email"
-                                    >email
-                                    <span
-                                        class="
-                                            text-primary
-                                            font-extrabold
-                                            text-sm
-                                            font-para
-                                        "
-                                        >*</span
-                                    ></label
-                                >
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    class="
-                                        text-secondary
-                                        border-1-2rem border-input-border
-                                        focus:border-input-border-focus
-                                        rounded-md
-                                        w-full
-                                        h-9
-                                        px-4
-                                        py-1
-                                        font-para
-                                        text-sm
-                                        outline-none
-                                    "
-                                />
-                            </div>
-
-                            <div class="form-group">
-                                <label
-                                    class="
-                                        text-secondary
-                                        capitalize
-                                        font-para font-normal
-                                        text-base
-                                    "
-                                    for="usernameRegister"
-                                    >username
-                                    <span
-                                        class="
-                                            text-primary
-                                            font-extrabold
-                                            text-sm
-                                            font-para
-                                        "
-                                        >*</span
-                                    ></label
-                                >
-                                <input
-                                    type="username"
-                                    name="username"
-                                    id="usernameRegister"
-                                    class="
-                                        text-secondary
-                                        border-1-2rem border-input-border
-                                        focus:border-input-border-focus
-                                        rounded-md
-                                        w-full
-                                        h-9
-                                        px-4
-                                        py-1
-                                        font-para
-                                        text-sm
-                                        outline-none
-                                    "
-                                />
-                            </div>
-
-                            <div class="form-group">
-                                <label
-                                    class="
-                                        text-secondary
-                                        capitalize
-                                        font-para font-normal
-                                        text-base
-                                    "
-                                    for="passwordRegister"
-                                    >password
-                                    <span
-                                        class="
-                                            text-primary
-                                            font-extrabold
-                                            text-sm
-                                            font-para
-                                        "
-                                        >*</span
-                                    ></label
-                                >
-                                <input
-                                    type="password"
-                                    name="password"
-                                    id="passwordRegister"
-                                    class="
-                                        text-secondary
-                                        border-1-2rem border-input-border
-                                        focus:border-input-border-focus
-                                        rounded-md
-                                        w-full
-                                        h-9
-                                        px-4
-                                        py-1
-                                        font-para
-                                        text-sm
-                                        outline-none
-                                    "
-                                />
-                            </div>
-
-                            <div class="form-group items-center md:items-start">
-                                <input
-                                    class="btn text-sm capitalize"
-                                    type="submit"
-                                    value="register"
-                                />
-                            </div>
-                        </form>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- Account Section End -->
+        <!-- Products Section End -->
 
         <!-- Footer Section Start -->
         <div class="w-full h-auto bg-footer py-6">
@@ -658,7 +417,7 @@
                         <a href="./index.html" class="inline">
                             <img
                                 class="w-3/5 m-auto"
-                                src="./img/nsn-white.png"
+                                src="../src/img/nsn-white.png"
                                 alt="NSN Shopping"
                             />
                         </a>
